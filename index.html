@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security 2 - Encrypt</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1>Security 2 - Encryption</h1>
+
+        <div class="column">
+            <h2>Encrypt</h2>
+            <form method="POST">
+                <p>
+                    <label for="username">Gebruikersnaam: </label>
+                    <input type="text" name="username" id="username" />
+                </p>
+                <p>
+                    <label for="password">Wachtwoord: </label>
+                    <input type="text" name="password" id="password" />
+                </p>
+                <p>
+                    <label for="message">Geheim bericht: </label>
+                    <textarea id="message" name="message"></textarea>
+                </p>
+                <p>
+                    <input type="hidden" name="encrypt" value="true">
+                    <button type="submit" id="button_encrypt">Encrypt it!</button>
+                    <span class="message"></span>
+                </p>
+            </form>
+        </div>
+
+        <div class="column">
+            <h2>Decrypt</h2>
+            <form method="POST">
+                <p>
+                    <label for="username2">Gebruikersnaam: </label>
+                    <input type="text" name="username" id="username2" />
+                </p>
+                <p>
+                    <label for="password2">Wachtwoord: </label>
+                    <input type="text" name="password" id="password2" />
+                </p>
+                <p>
+                    <label for="message2">Geheim bericht: </label>
+                    <textarea id="message2" name="message" readonly></textarea>
+                </p>
+                <p>
+                    <input type="hidden" name="decrypt" value="true">
+                    <button type="submit" id="button_decrypt">Decrypt it!</button>
+                    <span class="message"></span>
+                </p>
+            </form>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
